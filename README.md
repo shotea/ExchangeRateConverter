@@ -18,11 +18,11 @@ Feel free to explore the Exchange Rate Converter and streamline your currency co
 
 ## Video Background
 
-The extension features a captivating video background to enhance the user experience. The video can be customized by replacing the provided `exchange.mp4` file.
+The extension features a captivating video background to enhance the user experience.  
 
 ## Installation
 
-1. Clone the repository to your local machine: 
+1. Clone the repository to your local machine: https://github.com/shotea/ExchangeRateConverter.git
 2. Open the index file.
 
 ## Contributing
