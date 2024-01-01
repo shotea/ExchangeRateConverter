@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exchange Rates</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        h1,
+        input,
+        select,
+        button,
+        #result {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(96, 49, 49);
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+        }
+
+        input,
+        select,
+        button {
+            display: block;
+            margin: 20px auto;
+        }
+
+        #result {
+            text-align: center; /* Center text within the result div */
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <!-- Use the file:// protocol to access the local video file -->
+        <source src="file:///C:/Users/cikichan/Desktop/push%20to%20github/exchange%20chrome%20extension/chrome-ext/exchange.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>Exchange Rate Converter</h1>
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <select id="currency">
+        <option value="EUR">EUR</option>
+        <option value="RON">RON</option>
+        <option value="BTC">BTC</option>
+    </select>
+    <button id="convert">Convert Currency</button>
+    <div id="result"></div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include the exchange.js script -->
+    <script src="exchange.js"></script>
+</body>
+
+</html>
